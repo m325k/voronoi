@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Vizual" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Vizual" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="C:/Program Files (x86)/CodeBlocks/MinGW/bin" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DGLEW_STATIC" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Vizual" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="C:/Program Files (x86)/CodeBlocks/MinGW/bin" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/include" />
+		</Compiler>
+		<Linker>
+			<Add library="glut32" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="winmm" />
+			<Add library="gdi32" />
+			<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/lib" />
+		</Linker>
+		<Unit filename="include/Environment.h" />
+		<Unit filename="include/Field.h" />
+		<Unit filename="include/Point.h" />
+		<Unit filename="include/Shader.h" />
+		<Unit filename="include/Vector2d.h" />
+		<Unit filename="include/glew.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="shaders/shader.fs" />
+		<Unit filename="shaders/shader.vs" />
+		<Unit filename="src/Environment.cpp" />
+		<Unit filename="src/Field.cpp" />
+		<Unit filename="src/Point.cpp" />
+		<Unit filename="src/Shader.cpp" />
+		<Unit filename="src/Vector2d.cpp" />
+		<Unit filename="src/glew.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
